@@ -18,6 +18,7 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
+        <link href="https://fonts.googleapis.com/css?family=Knewave|Seaweed+Script" rel="stylesheet">
     </head>
     
     <body>
@@ -37,9 +38,9 @@
         </header>
         
         
-        <div class="container-fluid jumbotron text-center">
+        <div class="container-fluid jumbotro text-center">
                 <h1 id="vibe">VIIBR</h1>
-                <p id="par">We're <kbd>conntections</kbd>   are forged.</p>
+                <p id="par">We're conntections are forged .</p>
                 <p id="scroll">Scroll</p>
               
         </div>
@@ -57,16 +58,7 @@
             </div>
         </div>
         
-        <div id="content2">
-            <div class="col-sm-8 col-sm-offset-2 hope">
-                <h2>What is VIIBR?</h2>
-                <p>VIIBER was created to help individuals find other people in the local area who share similar interests. Its easier to vibe with (become friends with) someone who has similar interests. We want to make finding good friends easier and less of a hassle. As we stated before, some individuals have a hard time finding friends so this site will help alleviate some of that issue, with the help of technology! A website dedicated to helping individuals find friends!</p>
-
-            </div>
-            
-            
-        </div>
-        
+      
         <script src="jquery-3.1.1.js"></script>
         <script>
             $(document).ready(function(){
@@ -84,7 +76,7 @@
                     
                     if($(window).scrollTop()>100){
                         
-                        $("#vibe").css("opacity", 1 - percent*5.5);
+                        $("#vibe").css("opacity", 1 - percent*6.5);
                         $("#par").fadeOut(100);
                     }
                     else if($(window).scrollTop()<20)
