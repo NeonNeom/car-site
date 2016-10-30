@@ -31,7 +31,7 @@
                     <li>Services</li>
                     <li>Portfolio</li>
                     <li>Contact</li>
-                    <li>Max</li>
+                    <li>Login</li>
                 </ul>
             </nav>
             
@@ -41,6 +41,9 @@
         <div class="container-fluid jumbotro text-center">
                 <h1 id="vibe">VIIBR</h1>
                 <p id="par">Where friendships are forged .</p>
+                
+                <p id="b1">About</p>
+                <p id="b2">Sign up</p>
                 <p id="scroll">Scroll</p>
               
         </div>
@@ -69,9 +72,13 @@
                     
                     if($(window).scrollTop()>20){
                         $("#scroll").fadeOut(100);
+                        $("#b1").fadeOut(10);
+                        $("#b2").fadeOut(10);
                     }
                     else{
                         $("#scroll").fadeIn(100);
+                        $("#b1").fadeIn(100);
+                        $("#b2").fadeIn(100);
                     }
                     
                     if($(window).scrollTop()>100){
