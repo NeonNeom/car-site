@@ -2,11 +2,11 @@ header{
     margin: 0;
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 105px;
     background: rgba(0,0,0);
     color: white;
     z-index: 9;
-    
+    border-bottom: 30px solid white;
 }
 
 #content1{
@@ -86,11 +86,21 @@ li:hover{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 200;
+    top: 150;
     font-family: 'Knewave', cursive;
     color: #eee;
     font-size: 120px;
     text-shadow: 2px 3px rgba(0,0,0,.3);
+}
+
+#viibr{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-0%,-100%);
+    opacity: 1;
+    font-size: 110px;
+    
 }
 
 
@@ -99,7 +109,7 @@ li:hover{
     width: 600px;
     left: 50%;
     transform: translateX(-50%);
-    top: 380;
+    top: 310;
     font-size:46px;
     color: #eee;
     opacity: .9;
@@ -145,4 +155,29 @@ p{
     padding-top: 40px;
     line-height: 35px;
     font-size: 16px;
+}
+
+#b1,#b2{
+    display: inline-block;
+    position: absolute;
+    bottom: 200px;
+    font-size: 20;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background: rgba(0,0,0,.2);
+}
+
+#b1{
+    left: 50%;
+    transform: translateX(-120%);
+}
+#b2{
+    left: 50%;
+    transform: translateX(20%);
+    
 }
