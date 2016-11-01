@@ -7,6 +7,9 @@
     left: 0;
     padding: .1px;
 }
+a li{
+    color: white;
+}
 header{
     margin: 0;
     position: fixed;
@@ -17,7 +20,14 @@ header{
     z-index: 9;
     border-bottom: 1px solid rgba(0,0,0,.2);
 }
-
+#pic{
+    
+    background: url("friends5.png");
+    background-size: 200px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position:  center 20px;
+}
 #content1{
     MIN-height: calc(100vh - 65px);
     margin: 0;
@@ -81,7 +91,7 @@ li{
     font-size: 14;
 }
 li:hover{
-    background: #ea1051;
+     background: rgba(0,0,0,.2);
    
 }
 .jumbotro{
@@ -144,9 +154,11 @@ p{
 
 .dope p{
     min-height: 100%;
-    padding-top: 40px;
-    line-height: 35px;
+    padding-top: 20px;
+    padding-right: 20px;
+    line-height: 29px;
     font-size: 16px;
+    font-family:serif; 
 }
 
 .hope{
@@ -175,10 +187,14 @@ p{
     width: 100px;
     height: 50px;
     padding: 10px;
-    border-radius: 7px;
-    border: 2px solid rgba(0,0,0,.15);
+    border-radius: 3px;
+    border: 1.9px solid rgba(255,255,255,.7);
     color: white;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.2);
+}
+
+#b1:hover,#b2:hover{
+    background: rgba(0,0,0,.4);
 }
 
 #b1{
@@ -203,42 +219,45 @@ p{
     display: none; 
 } 
 #form_content{
-    width: 500px;
+    width: 600px;
     height: 600px;
     color: white;
     margin: auto;
     background: rgba(0,0,0,.3);
     margin-top: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
     padding:30px;
+    position: relative;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,.2);
 }
 
 .formItems{
     display: inline-block;
-    width: 400px;
+    width: 500px;
     margin-bottom: 15px;
 }
 
 .formItems input[type=text], input[type=password],input[type=email]{
-    width: 400px;
+    width: 500px;
     height: 20px;
     margin-top: 3px;
 }
 
 #first, #last{
-    width: 186px;
+    width: 240px;
     height: 20px;
+    margin: 0;
     margin-top: 3px;
 }
 .nameItems{
     display: inline-block;
-    width: 205px;
+    width: 240px;
     margin-bottom: 15px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 form{
-    width:460px;
+    width:500px;
     float: left;
     
     
@@ -252,20 +271,28 @@ fieldset{
 }
 
 #formAlign{
-    width: 425px;
+    padding-top: 60px;
+    padding-left: 15px;
+    width: 530px;
     margin: auto;
     height: 470px;
 }
 
 .formT{
     margin: 0;
-    text-align: right;
+    text-align: left;
     color: white;
     background: rgba(0,0,0,.9);
     padding: 4px;
     padding-bottom: 7px;
-    padding-right: 170px;
-    display: none;
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 62px;
+    font-family: 'Knewave', cursive;
+    border-bottom: 3px solid white;
 }
 
 #form h5{
