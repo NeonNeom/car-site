@@ -7,6 +7,7 @@
     left: 0;
     padding: .1px;
 }
+
 a li{
     color: white;
 }
@@ -19,14 +20,15 @@ header{
     color: white;
     z-index: 9;
     border-bottom: 2px solid rgba(0,0,0,.2);
+    font-family: 'Exo 2', sans-serif;
 }
 #pic{
     
     background: url("friends5.png");
-    background-size: 200px;
+    background-size: 300px;
     height: 300px;
     background-repeat: no-repeat;
-    background-position:  center 10px;
+    background-position:  center -25px;
 }
 #content1{
     MIN-height: calc(100vh - 65px);
@@ -106,10 +108,11 @@ li:hover{
     left: 50%;
     transform: translateX(-50%);
     top: 150;
-    font-family: 'Knewave', cursive;
+    font-family: 'Sansita One', cursive;
     color: #eee;
     font-size: 120px;
     text-shadow: 2px 3px rgba(0,0,0,.3);
+    letter-spacing: 5px;
 }
 
 #viibr{
@@ -129,11 +132,12 @@ li:hover{
     left: 50%;
     transform: translateX(-50%);
     top: 310;
-    font-size:46px;
+    font-size:40px;
     color: #eee;
-    opacity: .9;
+    opacity: .85;
     text-shadow: 1px 1px rgba(0,0,0,.2);
-    font-family: 'Seaweed Script', cursive;
+    font-family: 'Condiment', cursive;
+    letter-spacing: 2px;
 }
 
 p{
@@ -150,15 +154,16 @@ p{
 .dope h2{
     font-weight: bold;
     margin-top: 0;
+    font-family: 'Sansita One', cursive;
 }
 
 .dope p{
     min-height: 100%;
     padding-top: 40px;
     padding-right: 60px;
-    line-height: 25px;
-    font-size: 16px;
-    font-family:serif; 
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .hope{
@@ -182,7 +187,7 @@ p{
     display: inline-block;
     position: absolute;
     bottom: 200px;
-    font-size: 20;
+    font-size: 16;
     box-sizing: border-box;
     width: 100px;
     height: 50px;
@@ -191,10 +196,13 @@ p{
     border: 2px solid rgba(0,0,0,.3);
     color: white;
     background: rgba(0,0,0,.2);
+     opacity: .85;
+    font-family: 'Exo 2', sans-serif;
 }
 
 #b1:hover,#b2:hover{
     background: rgba(0,0,0,.4);
+     opacity: 1;
 }
 
 #b1{
