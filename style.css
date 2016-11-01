@@ -1,3 +1,12 @@
+#form{
+    background: linear-gradient(to bottom, rgba(0,0,0, .0),rgba(0,100,0,.1),rgba(00,0,10,.2)), #ea1051;
+    background-attachment: fixed;
+    overflow:auto;
+    position: static;
+    top: 0;
+    left: 0;
+    padding: .1px;
+}
 header{
     margin: 0;
     position: fixed;
@@ -179,5 +188,105 @@ p{
 #b2{
     left: 50%;
     transform: translateX(20%);
+}
+
+#nsd{
+    margin-top: 120px;
+    height: 500px;
+    background: rgba(0,0,0,.3);
+}
+
+#form header{
+    background: #ea1051;
+}
+::-webkit-scrollbar { 
+    display: none; 
+} 
+#form_content{
+    width: 500px;
+    height: 600px;
+    color: white;
+    margin: auto;
+    background: rgba(0,0,0,.3);
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding:30px;
+}
+
+.formItems{
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.formItems input[type=text], input[type=password],input[type=email]{
+    width: 400px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+#first, #last{
+    width: 186px;
+    height: 20px;
+    margin-top: 3px;
+}
+.nameItems{
+    display: inline-block;
+    width: 205px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+form{
+    width:460px;
+    float: left;
     
+    
+    
+}
+fieldset{
+    border: none;
+    border-left: 1px solid lightgray;
+    padding: 10px 0px; 
+    
+}
+
+#formAlign{
+    width: 425px;
+    margin: auto;
+    height: 470px;
+}
+
+.formT{
+    margin: 0;
+    text-align: right;
+    color: white;
+    background: rgba(0,0,0,.9);
+    padding: 4px;
+    padding-bottom: 7px;
+    padding-right: 170px;
+    display: none;
+}
+
+#form h5{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-right: 155px;
+    display: none;
+}
+
+form input[type = button]{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+#formPic{
+    display:inline-block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 10px 100px;
+    background: url(images/friends5.png);
+    background-size: cover;
+    background-position: center;
 }
