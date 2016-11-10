@@ -13,8 +13,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- jQuery library -->
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+        <script
+        src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -52,7 +56,7 @@
         
         <div id="content1">
             <div class="col-sm-4 dope" id="pic">
-
+                
             </div>
 
             <div id="about" class="col-sm-8 dope">
@@ -61,13 +65,56 @@
 
 
             </div>
+            
+            <div id="sld1" class="slides">
+                
+
+                <div id="about" class="col-sm-8 hope">
+                    <h2>What is VIIBER?</h2>
+                    <p>VIIBER was created to help individuals find other people in the local area who share similar interests. Its easier to vibe with (become friends with) someone who has similar interests. We want to make finding good friends easier and less of a hassle. As we stated before, some individuals have a hard time finding friends so this site will help alleviate some of that issue, with the help of technology! A website dedicated to helping individuals find friends!</p>
+
+
+                </div>
+
+            </div>
+            
+            
+            <div id="sld2" class="slides"></div>
+            
+            <div id="nav">
+                <div id="nav1"></div>
+                <div id="nav2"></div>
+                <div id="nav3"></div>
+            </div>
+            
         </div>
         
       
         <script src="jquery-3.1.1.js"></script>
         <script>
             $(document).ready(function(){
+                var current = 0;
                 
+                function crt(){
+                    if(current==0){
+                        $("#nav1").css("background","rgba(0,0,0,.8)");
+                        $("#nav2").css("background","rgba(0,0,0,0)");
+                        $("#nav3").css("background","rgba(0,0,0,0)");
+                    }
+
+                    else if(current==1){
+                        $("#nav1").css("background","rgba(0,0,0,0)");
+                        $("#nav2").css("background","rgba(0,0,0,.8)");
+                        $("#nav3").css("background","rgba(0,0,0,0)");
+                    }
+
+                    else if(current==2){
+                        $("#nav1").css("background","rgba(0,0,0,0)");
+                        $("#nav2").css("background","rgba(0,0,0,0)");
+                        $("#nav3").css("background","rgba(0,0,0,.8)");
+                    }
+                }
+                crt();
                 $(window).scroll(function(){
                     
                     var percent = $(document).scrollTop() / $(document).height();
@@ -95,6 +142,29 @@
                         }
                 
                 });
+            
+                $("#nav1").click(function(){
+                    
+                    $("#sld1").animate({ left: "-100%" }, 1000,'easeInOutExpo');
+                    $("#sld2").animate({ left: "-100%" }, 900,'easeInOutExpo');
+                    current=0;
+                    crt();
+                });
+                
+                $("#nav2").click(function(){
+                    
+                    $("#sld1").animate({ left: 0 }, 850,'easeInOutExpo');
+                    current = 1;
+                    crt();
+                });
+                
+                $("#nav3").click(function(){
+                    
+                    $("#sld2").animate({ left: 0 }, 850,'easeInOutExpo');
+                    current = 2;
+                    crt();
+                });
+              
                 
             });
         
