@@ -33,6 +33,7 @@ header{
 #content1{
     MIN-height: calc(100vh - 65px);
     margin: 0;
+    position: relative;
 }
 
 #content2{
@@ -169,18 +170,27 @@ p{
 .hope{
     box-sizing: border-box;
     height: 200px;
-    padding: 100px 20px;
+    padding: 0px 20px;
+    margin-top: 150px;
 }
+
 .hope h2{
     font-weight: bold;
     margin-top: 0;
+    font-family: 'Sansita One', cursive;
 }
 
 .hope p{
     min-height: 100%;
     padding-top: 40px;
-    line-height: 35px;
-    font-size: 16px;
+    padding-right: 60px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.hope p, .hope h2{
+    padding-left: 70px;
 }
 
 #b1,#b2{
@@ -324,4 +334,43 @@ form input[type = button]{
     background: url(images/friends5.png);
     background-size: cover;
     background-position: center;
+}
+
+#nav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: auto;
+    padding-left: 5px;
+}
+
+#nav div{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 100px;
+    border: 2px solid rgba(0,0,0,.8);
+}
+
+#nav div:hover{
+    background: rgba(0,0,0,.8);
+}
+
+.slides{
+    height: calc(100vh - 65px);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:-100%;
+    
+}
+
+#sld1{
+    background: #eee;
+}
+#sld2{
+    background: #eee;
 }
