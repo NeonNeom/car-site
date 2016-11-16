@@ -1,4 +1,4 @@
-<doctype! html>
+<!doctype html>
 <html>
     <head lang ="en">
     
@@ -12,6 +12,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+
         <!-- jQuery library -->
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -21,6 +22,7 @@
         crossorigin="anonymous"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="javas.js"></script>
         
         <link href="https://fonts.googleapis.com/css?family=Knewave|Seaweed+Script" rel="stylesheet">
         
@@ -28,47 +30,71 @@
     </head>
     
     <body>
-        <header>
-            <h1>VIIBR</h1>
-            <nav>
-                <ul>
-                    <a href="#"><li id="current">Home</li></a>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                    <li>Login</li>
-                </ul>
-            </nav>
+        <div id="bg"></div>
+        <div id="v1" class="view">
             
-        </header>
+                    <header>
+                        <h1>VIIBR</h1>
+                        <nav>
+                            <ul>
+                                <a href="#"><li id="current">Home</li></a>
+                                <li>About</li>
+                                <li>Services</li>
+                                <li>Portfolio</li>
+                                <li>Contact</li>
+                                <li>Login</li>
+                            </ul>
+                        </nav>
+
+
+                    </header>
+
+
+
+
+                    <div class="container-fluid jumbotro text-center">
+                            <h1 id="vibe">VIIBR</h1>
+                            <p id="par">Where friendships are forged .</p>
+
+
+                            <a href="#about"><p id="b1">About</p></a>
+                            <a href="form.html"><p id="b2">Sign up</p></a>
+                            <p id="scroll">Scroll</p>
+
+
+                    </div>
         
-        
-        <div class="container-fluid jumbotro text-center">
-                <h1 id="vibe">VIIBR</h1>
-                <p id="par">Where friendships are forged .</p>
-                
-                <a href="#about"><p id="b1">About</p></a>
-                <a href="form.html"><p id="b2">Sign up</p></a>
-                <p id="scroll">Scroll</p>
-              
         </div>
+        <div id="v2" class="view"></div>
+        <div id="v3" class="view"></div>
         
-        <div id="content1">
-            <div class="col-sm-4 dope" id="pic">
-                
+        <div id="srt"></div>
+        <div id="slide">
+                    <div class="col-sm-4 dope" id="pic">
+
+
+                    </div>
+
+
+                    <div id="about" class="col-sm-8 dope">
+                        <h2>Have you ever experienced this?</h2>
+                        <p>Have you ever moved to a new city, started attending a new school, or found yourself in a totally foreign place where you didn't know anyone? Surely we've all experienced this atleast once in our life. One of the first things that come to mind when those type of situations occur, usually runs along the lines of... "Will I make any friends?!?" For some of us, making new friends is a breeze. As for others.... well.. you know. It can be kind of difficult to find the right kind of people you can connect or vibe with. "If only there were an easier way to meet new friends.." Thats where VIIBER comes in!</p>
+
+
+
+
+                    </div>
+                    <div id="nav">
+                        
+                <div id="nav1"></div>
+                <div id="nav2"></div>
+                <div id="nav3"></div>
+                        
             </div>
-
-            <div id="about" class="col-sm-8 dope">
-                <h2>Have you ever experienced this?</h2>
-                <p>Have you ever moved to a new city, started attending a new school, or found yourself in a totally foreign place where you didn't know anyone? Surely we've all experienced this atleast once in our life. One of the first things that come to mind when those type of situations occur, usually runs along the lines of... "Will I make any friends?!?" For some of us, making new friends is a breeze. As for others.... well.. you know. It can be kind of difficult to find the right kind of people you can connect or vibe with. "If only there were an easier way to meet new friends.." Thats where VIIBER comes in!</p>
-
-
-            </div>
+        </div>
+        <div id="test">
             
-            <div id="sld1" class="slides">
-                
-
+            
                 <div id="about" class="col-sm-8 hope">
                     <h2>What is VIIBER?</h2>
                     <p>VIIBER was created to help individuals find other people in the local area who share similar interests. Its easier to vibe with (become friends with) someone who has similar interests. We want to make finding good friends easier and less of a hassle. As we stated before, some individuals have a hard time finding friends so this site will help alleviate some of that issue, with the help of technology! A website dedicated to helping individuals find friends!</p>
@@ -76,99 +102,14 @@
 
                 </div>
 
-            </div>
-            
-            
-            <div id="sld2" class="slides"></div>
-            
-            <div id="nav">
-                <div id="nav1"></div>
-                <div id="nav2"></div>
-                <div id="nav3"></div>
-            </div>
-            
+        
         </div>
-        
-      
-        <script src="jquery-3.1.1.js"></script>
-        <script>
-            $(document).ready(function(){
-                var current = 0;
-                
-                function crt(){
-                    if(current==0){
-                        $("#nav1").css("background","rgba(0,0,0,.8)");
-                        $("#nav2").css("background","rgba(0,0,0,0)");
-                        $("#nav3").css("background","rgba(0,0,0,0)");
-                    }
-
-                    else if(current==1){
-                        $("#nav1").css("background","rgba(0,0,0,0)");
-                        $("#nav2").css("background","rgba(0,0,0,.8)");
-                        $("#nav3").css("background","rgba(0,0,0,0)");
-                    }
-
-                    else if(current==2){
-                        $("#nav1").css("background","rgba(0,0,0,0)");
-                        $("#nav2").css("background","rgba(0,0,0,0)");
-                        $("#nav3").css("background","rgba(0,0,0,.8)");
-                    }
-                }
-                crt();
-                $(window).scroll(function(){
-                    
-                    var percent = $(document).scrollTop() / $(document).height();
-                    
-                    if($(window).scrollTop()>20){
-                        $("#scroll").fadeOut(100);
-                        $("#b1").fadeOut(10);
-                        $("#b2").fadeOut(10);
-                    }
-                    else{
-                        $("#scroll").fadeIn(100);
-                        $("#b1").fadeIn(100);
-                        $("#b2").fadeIn(100);
-                    }
-                    
-                    if($(window).scrollTop()>100){
-                        
-                        $("#vibe").css("opacity", 1 - percent*6.5);
-                        $("#par").fadeOut(100);
-                    }
-                    else if($(window).scrollTop()<20)
-                        {
-                            $("#vibe").css("opacity", 1);
-                            $("#par").fadeIn(100);
-                        }
-                
-                });
-            
-                $("#nav1").click(function(){
-                    
-                    $("#sld1").animate({ left: "-100%" }, 1000,'easeInOutExpo');
-                    $("#sld2").animate({ left: "-100%" }, 900,'easeInOutExpo');
-                    current=0;
-                    crt();
-                });
-                
-                $("#nav2").click(function(){
-                    
-                    $("#sld1").animate({ left: 0 }, 850,'easeInOutExpo');
-                    current = 1;
-                    crt();
-                });
-                
-                $("#nav3").click(function(){
-                    
-                    $("#sld2").animate({ left: 0 }, 850,'easeInOutExpo');
-                    current = 2;
-                    crt();
-                });
-              
-                
-            });
-        
-        </script>
+        <div id="end"></div>
     </body>
 
+
+
+
 </html>
+
+
