@@ -1,3 +1,52 @@
+body {
+  margin: auto;
+  height: auto;
+}
+#testr{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 1000;
+}
+.view{
+    height: 100vh;
+}
+
+
+#v1{
+    
+    
+}
+#v2{
+    background: #868;
+    bottom: 0;
+    height: calc(100vh - 65px);
+}
+#v3{
+    background: #686;
+   display: none;
+}
+
+
+
+
+#srt, #slide, #test, #end{
+    position: absolute;
+    height: calc(100vh - 65px);
+    
+    width: 100%;
+    background: #eee;
+    top: 100%;
+    left: -100%;
+}
+
+
+#slide{
+    left:0; 
+}
+
 #form{
     background: linear-gradient(to bottom, rgba(0,0,0, .0),rgba(0,100,0,.1),rgba(00,0,10,.2)), #ea1051;
     background-attachment: fixed;
@@ -8,6 +57,7 @@
     padding: .1px;
 }
 
+
 a li{
     color: white;
 }
@@ -16,10 +66,13 @@ header{
     position: fixed;
     width: 100%;
     height: 65px;
-    background: rgba(0,0,0);
+    background: linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.3) );
     color: white;
+    top: 0px;
     z-index: 9;
-    border-bottom: 2px solid rgba(0,0,0,.2);
+    border-bottom: 5px solid white;
+   
+    
     font-family: 'Exo 2', sans-serif;
 }
 #pic{
@@ -31,10 +84,12 @@ header{
     background-position:  center -25px;
 }
 #content1{
-    MIN-height: calc(100vh - 65px);
+    MIN-height: 100vh;
     margin: 0;
     position: relative;
+    background: red;
 }
+
 
 #content2{
     height: calc(100vh - 65px);
@@ -43,6 +98,7 @@ header{
     margin: 0;
     text-align: center;
 }
+
 
 #current{
     border-top: 6px solid White;
@@ -56,7 +112,8 @@ header{
     font-style: italic;
     color: white;
     font-size: 20px;
-     opacity: .5;
+     opacity: .8;
+    
 }
 header h1{
     height: 65px;
@@ -69,20 +126,25 @@ header h1{
     font-weight: bold;
 }
 
+
 nav{
     display: inline-block;
     height: 65px;
     margin: 0;
     float: right;
     margin-right: 30px;
+    min-width: 500px;
     
 }
+
 
 ul{
     height: 65px;
     margin: 0;
     
+    
 }
+
 
 li{
     box-sizing: border-box;
@@ -98,23 +160,26 @@ li:hover{
    
 }
 .jumbotro{
-    height: 99.5vh;
+    height: 99.9vh;
     margin: 0;
     background: linear-gradient(to bottom, rgba(0,0,0, .0),rgba(0,100,0,.1),rgba(00,0,10,.2)), #ea1051;
     background-attachment: fixed;
+    border-bottom: 5px solid white;
 }
+
 
 .jumbotro #vibe{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 150;
+    top: 200px;
     font-family: 'Sansita One', cursive;
     color: #eee;
     font-size: 120px;
     text-shadow: 2px 3px rgba(0,0,0,.3);
     letter-spacing: 5px;
 }
+
 
 #viibr{
     position: fixed;
@@ -127,12 +192,14 @@ li:hover{
 }
 
 
+
+
 .jumbotro #par{
     position: fixed;
     width: 600px;
     left: 50%;
     transform: translateX(-50%);
-    top: 310;
+    top: 360px;
     font-size:40px;
     color: #eee;
     opacity: .85;
@@ -141,9 +208,11 @@ li:hover{
     letter-spacing: 2px;
 }
 
+
 p{
     margin: 0 auto;
 }
+
 
 .dope{
     box-sizing: border-box;
@@ -152,11 +221,13 @@ p{
     margin-top: 150px;
 }
 
+
 .dope h2{
     font-weight: bold;
     margin-top: 0;
     font-family: 'Sansita One', cursive;
 }
+
 
 .dope p{
     min-height: 100%;
@@ -167,6 +238,7 @@ p{
     font-family: 'Exo 2', sans-serif;
 }
 
+
 .hope{
     box-sizing: border-box;
     height: 200px;
@@ -174,11 +246,13 @@ p{
     margin-top: 150px;
 }
 
+
 .hope h2{
     font-weight: bold;
     margin-top: 0;
     font-family: 'Sansita One', cursive;
 }
+
 
 .hope p{
     min-height: 100%;
@@ -189,14 +263,16 @@ p{
     font-family: 'Exo 2', sans-serif;
 }
 
+
 .hope p, .hope h2{
     padding-left: 70px;
 }
 
+
 #b1,#b2{
     display: inline-block;
     position: absolute;
-    bottom: 200px;
+    bottom: 170px;
     font-size: 16;
     box-sizing: border-box;
     width: 100px;
@@ -206,14 +282,16 @@ p{
     border: 2px solid rgba(0,0,0,.3);
     color: white;
     background: rgba(0,0,0,.2);
-     opacity: .85;
+     opacity: .9;
     font-family: 'Exo 2', sans-serif;
 }
+
 
 #b1:hover,#b2:hover{
     background: rgba(0,0,0,.4);
      opacity: 1;
 }
+
 
 #b1{
     left: 50%;
@@ -224,11 +302,13 @@ p{
     transform: translateX(20%);
 }
 
+
 #nsd{
     margin-top: 120px;
     height: 500px;
     background: rgba(0,0,0,.3);
 }
+
 
 #form header{
     background: #ea1051;
@@ -249,17 +329,20 @@ p{
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,.2);
 }
 
+
 .formItems{
     display: inline-block;
     width: 500px;
     margin-bottom: 15px;
 }
 
+
 .formItems input[type=text], input[type=password],input[type=email]{
     width: 500px;
     height: 20px;
     margin-top: 3px;
 }
+
 
 #first, #last{
     width: 240px;
@@ -273,6 +356,7 @@ p{
     margin-bottom: 15px;
     margin-right: 15px;
 }
+
 
 form{
     width:500px;
@@ -288,6 +372,7 @@ fieldset{
     
 }
 
+
 #formAlign{
     padding-top: 60px;
     padding-left: 15px;
@@ -295,6 +380,7 @@ fieldset{
     margin: auto;
     height: 470px;
 }
+
 
 .formT{
     margin: 0;
@@ -313,6 +399,7 @@ fieldset{
     border-bottom: 3px solid white;
 }
 
+
 #form h5{
     text-align: right;
     margin-top: 10px;
@@ -320,6 +407,7 @@ fieldset{
     padding-right: 155px;
     display: none;
 }
+
 
 form input[type = button]{
     padding: 5px 10px;
@@ -336,6 +424,7 @@ form input[type = button]{
     background-position: center;
 }
 
+
 #nav{
     position: absolute;
     bottom: 20px;
@@ -344,7 +433,9 @@ form input[type = button]{
     height: 50px;
     width: auto;
     padding-left: 5px;
+    z-index: 99999;
 }
+
 
 #nav div{
     width: 15px;
@@ -353,11 +444,14 @@ form input[type = button]{
     display: inline-block;
     border-radius: 100px;
     border: 2px solid rgba(0,0,0,.8);
+    z-index: 99999;
 }
+
 
 #nav div:hover{
     background: rgba(0,0,0,.8);
 }
+
 
 .slides{
     height: calc(100vh - 65px);
@@ -368,9 +462,15 @@ form input[type = button]{
     
 }
 
+
 #sld1{
     background: #eee;
 }
 #sld2{
     background: #eee;
 }
+#srt, #end{
+    z-index: -99;
+}
+
+
