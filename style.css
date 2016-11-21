@@ -175,7 +175,7 @@ li:hover{
     top: 200px;
     font-family: 'Sansita One', cursive;
     color: #eee;
-    font-size: 120px;
+    font-size:  20vmin;
     text-shadow: 2px 3px rgba(0,0,0,.3);
     letter-spacing: 5px;
 }
@@ -225,6 +225,8 @@ p{
 .dope h2{
     font-weight: bold;
     margin-top: 0;
+    
+
     font-family: 'Sansita One', cursive;
 }
 
@@ -473,4 +475,42 @@ form input[type = button]{
     z-index: -99;
 }
 
+#menu{
+    display: inline-block;
+    width: 65px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    box-sizing: border-box;
+    padding: 13px 0px;
+    display: none;
+}
+
+#menu div{
+    width: 50%;
+    height: 4px;
+    background: white;
+    margin: 5px auto;
+}
+
+@media only screen and (max-width: 700px) {
+    ul {
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+    .dope, .hope{
+        margin-top: 50px;
+    }
+    .dope h2, .hope h2{
+        font-size:5.9vw;
+        margin-top: 10px;
+    }
+    .dope p,  .hope p{
+        font-size:3vw;
+        padding: 10px 0;
+    }
+}
 
