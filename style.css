@@ -167,12 +167,16 @@ li:hover{
     border-bottom: 5px solid white;
 }
 
-
-.jumbotro #vibe{
+#headT{
     position: fixed;
     left: 50%;
-    transform: translateX(-50%);
-    top: 200px;
+    
+    top: 50%;
+    transform: translate(-50%,-80%);
+}
+.jumbotro #vibe{
+    
+    
     font-family: 'Sansita One', cursive;
     color: #eee;
     font-size:  20vmin;
@@ -195,11 +199,7 @@ li:hover{
 
 
 .jumbotro #par{
-    position: fixed;
     width: 600px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 360px;
     font-size:40px;
     color: #eee;
     opacity: .85;
