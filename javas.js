@@ -6,6 +6,7 @@
                 var crt = 0;
                 var sOn = false;
                 var current = 0;
+                var clk = 0;
                 
                 var scl=0; // Create a variable
                 var srlEvent = function (e) {
@@ -111,6 +112,27 @@
                     $("#test").animate({ left: 0 }, 850,'easeInOutExpo');
                     current = 1;
                     crrt();
+                });
+  
+                $("#menu").click(function(){
+                        
+                        if(clk==0){
+                            $("#bg").animate({left:0},600);
+                            clk=1;
+                        }
+                                
+                       else if(clk==1){
+                            $("#bg").animate({left:'200%'},600);
+                           clk=0;
+                        }
+                        
+                       
+                        
+                });
+                $("#close").click(function(){
+                        
+                        $("#bg").animate({left:'200%'},600);
+                        
                 });
                 
                 $(window).scroll(function(){
