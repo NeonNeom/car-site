@@ -132,6 +132,7 @@
                 $("#close").click(function(){
                         
                         $("#bg").animate({left:'200%'},600);
+                        clk=0;
                         
                 });
                 
