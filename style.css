@@ -487,16 +487,71 @@ form input[type = button]{
     display: none;
 }
 
+#menu:hover{
+    cursor: pointer;
+}
+
 #menu div{
     width: 50%;
     height: 4px;
     background: white;
     margin: 5px auto;
 }
+#bg{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: gray;
+    z-index: 9;
+    left: 200%;
+}
+
+#sideM{
+    display: inline-block;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top:60px;
+    left: 0;
+}
+
+#sideM li{
+    display: inline;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    height: 80px;
+}
+
+#sideM li:hover{
+    color: wheat;
+}
+
+#sideM a li{
+    text-decoration: none;
+}
+#close{
+    position: absolute;
+    bottom: 0px;
+    font-size: 40px;
+    
+    width: 70px;
+    text-align: center;
+    right: 0px;
+}
+#close:hover{
+    cursor: pointer;
+    color: white;
+}
 
 @media only screen and (max-width: 700px) {
-    ul {
+    ul{
         display: none;
+    }
+    nav{
+        height: 0;
     }
     #menu{
         display: inline-block;
